@@ -1,0 +1,39 @@
+.navbar {
+    overflow: hidden;
+    background-color: brown;
+    display: flex;
+    height: 40px;
+    width: 100%;
+    align-items: ceneter;
+    position: sticky;
+    top: 10px;
+
+}
+.navbar a{
+    float: left;
+    color: blueviolet;
+    text-align: center;
+    padding: 14px 16;
+    text-decoration: none;
+    font-size: 17px;
+    cursor: pointers;
+    margin-left: 20px;
+}
+/*universal selector*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*pseudo   selector*/
+.navbar a:hover {
+    color: blue;
+    background-color: aqua;
+}
+.div1{
+    position: sticky;
+    top: 20px;
+    height: 20px;
+    width: 50px;
+    background-color: blueviolet;
+}
