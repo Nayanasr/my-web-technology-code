@@ -135,3 +135,70 @@ hobbies.forEach(function(val, ind, arr) {
 //includes
 console.log(hobbies.includes("cricket")); //true//it returns boolian
 console.log(hobbies.includes("kabaddi")); //false//it returns boolian
+
+//find
+//find  method will take one callback function and it returns the first
+//element that matches the condition
+let arryFind = [30,1,4,5,9,65,8,4];
+const found = arryFind.find((value) => value > 10);
+console.log(found);
+
+//sort
+//arrange the elements in ascending or decending order
+
+//splice method
+//it add or remove the elements in the mid of the array
+//it will affect yhe original array
+//it returns the removed elements if any element is removed
+//syntax// arrayData.splice(start-index,no of elements to be removed,new elements to be added)
+let spliceArray = [2,4,7,3,5,6,8,9,10];
+let splicedArray = spliceArray.splice(3, 2, 56, 78);
+console.log(spliceArray);
+console.log(splicedArray);//splice method will return the deleted elements
+
+//adding element without deleting
+let noDelete = spliceArray.splice(2, 0, 25, 60);
+console.log(spliceArray);
+console.log(noDelete);
+
+//slice method
+//it will return the new array
+//it will take two arguments start 0
+//to delete an element in mid of the array
+let sliceArray = ["CIT", "SSIT", "KIT", "NIST", "Christ"];//original array
+const data2 = sliceArray.slice(1); //ssit,kit,nist,christ
+const data3 = sliceArray.slice(2); //kit,nist,christ
+const data4 = sliceArray.slice(2, 4); //first argument is excluded and second argument is included
+const data5 = sliceArray.slice(-2); //nist,christ
+const data6 = sliceArray.slice(2, -1); //kit,nist
+
+console.log(data2, "sliced array");
+console.log(data3);
+console.log(data4);
+console.log(data5);
+console.log(data6);
+
+console.log(sliceArray, "original array");
+
+//sort()
+//arrange the elements in ascending or decending order
+//it will consider the values as string
+//it will arrange an elements in an ascendind or descending order
+//new array with in sorted order
+//it will over writes the original array
+let sortArray = [15,18,78,13,23,44,54,32,99,100];//[100,13,15,18,23,32,44,54,78,99]
+sortArray.sort(); //without callback function sort method will give unpredictable value
+// like mentioned in above comment lines
+console.log(sortArray);
+
+//we should use call back function
+sortArray.sort((a,b) => {
+    return a - b;
+});
+console.log(sortArray);
+
+sortArray.sort((a,b) => {
+    return b - a;
+});
+console.log(sortArray);
+
