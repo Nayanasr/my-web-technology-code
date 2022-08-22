@@ -148,7 +148,7 @@ console.log(found);
 
 //splice method
 //it add or remove the elements in the mid of the array
-//it will affect yhe original array
+//it will affect the original array
 //it returns the removed elements if any element is removed
 //syntax// arrayData.splice(start-index,no of elements to be removed,new elements to be added)
 let spliceArray = [2,4,7,3,5,6,8,9,10];
@@ -183,7 +183,7 @@ console.log(sliceArray, "original array");
 //sort()
 //arrange the elements in ascending or decending order
 //it will consider the values as string
-//it will arrange an elements in an ascendind or descending order
+//it will arrange an elements in an ascendindg or descending order
 //new array with in sorted order
 //it will over writes the original array
 let sortArray = [15,18,78,13,23,44,54,32,99,100];//[100,13,15,18,23,32,44,54,78,99]
